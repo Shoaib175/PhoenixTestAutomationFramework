@@ -30,7 +30,7 @@ jobs:
       
     - name: Upload a build Artifact
       if: always()
-      uses: actions/upload-artifact@v3.2.2
+      uses: actions/upload-artifact@v4
       with:
         name: SureFire report
         path: target/surefire-reports/
