@@ -3,6 +3,8 @@ package com.api.tests;
 import static org.hamcrest.Matchers.*;
 import org.testng.annotations.Test;
 
+import com.api.pojo.UserCredentials;
+
 import static com.api.constants.Role.*;
 import static com.api.utils.AuthTokenProvider.*;
 import static com.api.utils.ConfigManager.*;
@@ -18,6 +20,7 @@ public class CountAPITest {
 	@Test
 	public void verifyCountAPIResponse() throws IOException {
 		
+
 		given()
 		.baseUri(getProperty("BASE_URI"))
 		.and()
